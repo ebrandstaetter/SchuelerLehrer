@@ -1,5 +1,7 @@
 package at.ac.htl.bhitm3.model;
 
+import java.util.Date;
+
 public class Person {
 
     String name;
@@ -7,6 +9,8 @@ public class Person {
     String lastname;
 
     String address;
+
+    Date birthdate;
 
     public void setName(String personName) {
         name = personName;
@@ -28,8 +32,15 @@ public class Person {
         address = value;
     }
 
-    public Object getAddress() {
+    public String getAddress() {
         return address;
     }
 
+    public void setBirthdate(Date value) {
+        birthdate = value;
+    }
+
+    public Date getBirthdate() {
+        return birthdate;
+    }
 }
