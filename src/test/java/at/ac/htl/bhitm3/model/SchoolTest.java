@@ -32,6 +32,19 @@ public class SchoolTest {
         assertEquals(1, school.getSchoolClasses().size());
         assertEquals(schoolClass, school.getSchoolClasses().get(0));
     }
+    
+    @Test
+    public void given_new_school_when_counting_students_then_result_is_zero() {
+        assertEquals(0, school.getStudents().size());
+    }
+
+    @Test
+    public void given_new_school_when_adding_student_then_result_is_added_class() {
+        var student = new Student();
+        school.addStudent(student);
+        assertEquals(1, school.getStudents().size());
+        assertEquals(student, school.getStudents().get(0));
+    }
 
     // @Test public void given_clever_kakao_milch_trinkfertig_when_drinking_clever_kakaomilch_then_result_is_high_satisfaction(){
     //     var cleverKakaoMilchTrinkfertig = new CleverKakaoMilchTrinkfertig();
