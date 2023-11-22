@@ -2,6 +2,8 @@ package at.ac.htl.bhitm3.model;
 
 import static org.junit.Assert.assertEquals;
 
+import java.beans.Transient;
+
 import org.junit.Before;
 import org.junit.Test;
 
@@ -30,7 +32,14 @@ public class PersonTest {
     @Test
     public void given_new_person_when_addres_is_set_to_limesstraße_then_is_limesstraße() {
         var person = new Person();
-        person.setAddress("mustermann");
-        assertEquals("mustermann", person.getAddress());
+        person.setAddress("limesstraße");
+        assertEquals("limesstraße", person.getAddress());
+    }
+
+    @Test
+    public void given_new_person_when_birthdate_is_set_then_is_setted_date() {
+        var person = new Person();
+        person.setAddress("limesstraße");
+        assertEquals("limesstraße", person.getAddress());
     }
 }
