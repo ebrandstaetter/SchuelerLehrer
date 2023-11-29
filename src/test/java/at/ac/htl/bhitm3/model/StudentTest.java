@@ -17,4 +17,13 @@ public class StudentTest {
     public void given_student_then_is_instance_of_person() {
         assertTrue(student instanceof Person);
     }
+
+    public void given_when_studentId_is_set_to_187_studentId_is_187() {
+        var student = new Student();
+        student.setStudentId(187);
+        assertEquals(187, student.getStudentId)
+    }
+
+
+
 }
