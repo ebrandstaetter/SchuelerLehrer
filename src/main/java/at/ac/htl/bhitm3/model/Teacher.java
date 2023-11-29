@@ -2,15 +2,15 @@ package at.ac.htl.bhitm3.model;
 
 public class Teacher extends Person {
 
-    int id;
+    int teacherId;
     int salary;
 
-    public int getId() {
-        return this.id;
+    public int getTeacherId() {
+        return this.teacherId;
     }
 
-    public void setId(int id) {
-        this.id = id;
+    public void setTeacherId(int id) {
+        this.teacherId = id;
     }
 
     public int getSalary() {

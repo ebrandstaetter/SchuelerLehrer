@@ -23,8 +23,8 @@ public class TeacherTest {
 
     @Test
     public void given_teacher_when_id_is_set_to_1_then_id_is_1() {
-        teacher.setId(1);
-        assertEquals(1, teacher.getId());
+        teacher.setTeacherId(1);
+        assertEquals(1, teacher.getTeacherId());
     }
 
     @Test
