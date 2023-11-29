@@ -2,7 +2,6 @@ package at.ac.htl.bhitm3.model;
 
 import static org.junit.Assert.assertEquals;
 
-import java.beans.Transient;
 import java.util.Date;
 
 import org.junit.Before;
