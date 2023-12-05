@@ -9,6 +9,8 @@ public class School {
 
     List<Student> students = new LinkedList<>();
 
+    List<Teacher> teachers = new LinkedList<>();
+
     public List<SchoolClass> getSchoolClasses() {
         return schoolClasses;
     }
@@ -25,4 +27,11 @@ public class School {
         this.students.add(student);
     }
 
+    public List<Teacher> getTeachers() {
+        return teachers;
+    }
+
+    public void addTeacher(Teacher teacher) {
+        this.students.add(teacher);
+    }
 }
